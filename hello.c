@@ -20,5 +20,9 @@ int main()
     unsigned char symbol = 75;
     printf("%c\n", symbol);
 
+    float real = 5.345f;
+    double doublereal = 5.345;
+    printf("%d\n", real == doublereal);
+
     return 0;
 }
