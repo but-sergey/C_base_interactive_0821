@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main()
 {
+    setlocale(LC_ALL, "Rus");
+    
     // printf("Hello world\n");
     // printf("This is a new row");
     // printf("This is a '\t' tab symbol");
