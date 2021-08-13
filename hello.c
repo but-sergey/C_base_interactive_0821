@@ -24,5 +24,9 @@ int main()
     double doublereal = 5.345;
     printf("%d\n", real == doublereal);
 
+    int a = 10;
+    int b = 10;
+    printf("%d\n", a == b);
+
     return 0;
 }
