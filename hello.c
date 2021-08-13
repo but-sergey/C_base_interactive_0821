@@ -5,28 +5,9 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
     
-    // printf("Hello world\n");
-    // printf("This is a new row");
-    // printf("This is a '\t' tab symbol");
-    // printf("This is backslash \\");
-    // printf("This is a terminant \0 all the other text will be ignored");
-    
-    // int a = 50;
-    // printf("%d\n", a);
-    // printf("%05d\n", a);
-    // printf("%.2f\n", 5.12345);
-    // printf("Заполнители - это \"%5d%%\" форматирования текста!", a);
-
-    unsigned char symbol = 75;
-    printf("%c\n", symbol);
-
-    float real = 5.345f;
-    double doublereal = 5.345;
-    printf("%d\n", real == doublereal);
-
     int a = 10;
-    int b = 10;
-    printf("%d\n", a == b);
+    printf("Переменная a имеет значение: %d\n", a);
+    printf("Переменная a хранится по адресу: %p\n", &a);
 
     return 0;
 }
