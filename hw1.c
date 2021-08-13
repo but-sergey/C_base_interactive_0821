@@ -11,7 +11,12 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
     
-    printf("Hello world!!!");
+    printf("Hello world!!!\n");
+
+    int num;
+    printf("Введите целое число: ");
+    scanf("%d", &num);
+    printf("Вы ввели: %d, квадрат этого числа: %d\n", num, num * num);
 
     return 0;
 }
