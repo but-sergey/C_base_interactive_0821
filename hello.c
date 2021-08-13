@@ -17,5 +17,8 @@ int main()
     int remainder = variable % 5;
     printf("Остаток от деления %d на %d: %d\n", variable, 5, remainder);
 
+    remainder++;
+    printf("Инкремент: %d", remainder);
+
     return 0;
 }
