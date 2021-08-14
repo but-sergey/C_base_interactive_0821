@@ -15,6 +15,10 @@ int main(int argc, const char** argv){
         {
             d++;
         }
+        if (d == 3)
+        {
+            break;
+        }
     }
     printf("Введенное число %d %sявляется простым", number, (d == 2) ? "" : "не ");
 
