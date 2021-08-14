@@ -5,8 +5,7 @@ int main(int argc, const char** argv){
     int b = 20;
     while (a < b)
     {
-        printf("%d ", a);
-        a++;
+        printf("%d ", ++a);
     }
     
 
