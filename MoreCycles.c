@@ -15,6 +15,10 @@ int main(int argc, const char** argv){
         {
             d++;
         }
+        else
+        {
+            continue;
+        }
         if (d == 3)
         {
             break;
