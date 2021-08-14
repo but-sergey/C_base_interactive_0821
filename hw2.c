@@ -34,7 +34,7 @@ int main(int argc, const char** argv){
     */
 
     // Задание 3
-    ///*
+    /*
     int num;
     int max = 1000;
     do{
@@ -46,6 +46,22 @@ int main(int argc, const char** argv){
     printf("Положительные четные числа до %d: ", num);
     for (int i = 2; i <= num; i += 2){
         printf("%d%s", i, (i == num) ? ".\n" : ", ");
+    }
+    */
+
+    // Задание 4
+    ///*
+    int count;
+    printf("Введите количество строк для вывода треугольника: ");
+    scanf("%d", &count);
+    for (int i = 1; i <= count; i++){
+        for (int j = 1; j <= count - i; j++){
+            printf(" ");
+        }
+        for (int j = 1; j < i*2; j++){
+            printf("^");
+        }
+        printf("\n");
     }
     //*/
 
