@@ -39,8 +39,11 @@ int main(int argc, const char** argv)
     int x = 7;
     if (x >= 0 && x <= 10)
     {
+        int var = 10;
         printf("X fits!");
     }
+
+    printf("%d\n", var);
 
     return 0;
 }
