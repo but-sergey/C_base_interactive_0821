@@ -18,9 +18,9 @@ int main(int argc, const char** argv)
     //     printf("I can not understand your input\n");
     // }
 
-    int a = 10;
-    int b = 15;
-    int c;
+    // int a = 10;
+    // int b = 15;
+    // int c;
 
     // if (a > b)
     // {
@@ -31,10 +31,16 @@ int main(int argc, const char** argv)
     //     c = a;
     // }
 
-    c = (a > b) ? b : a;
+    // c = (a > b) ? b : a;
     
-    printf("c = %d\n", c);
-    printf("%s\n", (a > b) ? "true" : "false");
+    // printf("c = %d\n", c);
+    // printf("%s\n", (a > b) ? "true" : "false");
+
+    int x = 7;
+    if (x >= 0 && x <= 10)
+    {
+        printf("X fits!");
+    }
 
     return 0;
 }
