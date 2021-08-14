@@ -37,9 +37,10 @@ int main(int argc, const char** argv)
     // printf("%s\n", (a > b) ? "true" : "false");
 
     int x = 7;
+    int var = 10;
+
     if (x >= 0 && x <= 10)
     {
-        int var = 10;
         printf("X fits!");
     }
 
