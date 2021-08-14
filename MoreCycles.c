@@ -26,15 +26,59 @@ int main(int argc, const char** argv){
     // }
     // printf("Введенное число %d %sявляется простым", number, (d == 2) ? "" : "не ");
 
-    int base = 2;
-    int signigicative = 10;
-    int result = 1;
+    // int base = 2;
+    // int signigicative = 10;
+    // int result = 1;
 
-    for (int i = 0; i < signigicative; i++)
+    // for (int i = 0; i < signigicative; i++)
+    // {
+    //     result *= base;
+    // }
+    // printf("power: %d\n", result);
+
+    float first;
+    float second;
+    float result;
+    unsigned char operator;
+    
+    printf("Введите, пожалуйста, перввый операнд: ");
+    scanf("%f", &first);
+    fseek(stdin, 0, SEEK_END);
+    printf("Введите, пожалуйста, действие: ");
+    scanf("%c", &operator);
+    if (operator == '/')
     {
-        result *= base;
+        do{
+            printf("Введите, пожалуйста, второй операнд: ");
+            scanf("%f", &second);
+        } while (second == 0);
     }
-    printf("power: %d\n", result);
-
+    else
+    {
+            printf("Введите, пожалуйста, второй операнд: ");
+            scanf("%f", &second);
+    }
+    switch (operator)
+    {
+        case '*':
+            result = first * second;
+            printf("%f %c %f = %f\n", first, operator, second, result);
+            break;
+        case '/':
+            result = first / second;
+            printf("%f %c %f = %f\n", first, operator, second, result);
+            break;
+        case '-':
+            result = first - second;
+            printf("%f %c %f = %f\n", first, operator, second, result);
+            break;
+        case '+':
+            result = first + second;
+            printf("%f %c %f = %f\n", first, operator, second, result);
+            break;
+        default:
+            printf("Неизвестный оператор: %c", operator);
+    }
+ 
     return 0;
 }
