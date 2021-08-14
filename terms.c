@@ -22,14 +22,16 @@ int main(int argc, const char** argv)
     int b = 15;
     int c;
 
-    if (a > b)
-    {
-        c = b;
-    }
-    else
-    {
-        c = a;
-    }
+    // if (a > b)
+    // {
+    //     c = b;
+    // }
+    // else
+    // {
+    //     c = a;
+    // }
+
+    c = (a > b) ? b : a;
     
     printf("c = %d\n", c);
 
