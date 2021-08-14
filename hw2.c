@@ -11,10 +11,27 @@ int main(int argc, const char** argv){
     setlocale(LC_ALL, "Rus");
 
     // Çàäàíèå 1
+    /*
     int num;
     printf("Ââåäèòå, ïîæàëóéñòà, ÷èñëî: ");
     scanf("%d", &num);
     printf("×èñëî %d %sâõîäèò â äèàïàçîí îò 0 äî 100 âêëş÷èòåëüíî.\n", num, (num >= 0 && num <= 100) ? "" : "íå ");
+    */
+
+    // Çàäàíèå 2
+    ///*
+    int num;
+    int count = 10;
+    float average = 0.0f;
+    printf("Ââåäèòå ïîñëåäîâàòåëüíî %d ÷èñåë:\n", count);
+    for (int i = 1; i <= count; i++){
+        printf("×èñëî %d: ", i);
+        scanf("%d", &num);
+        average += num;
+    }
+    average /= count;
+    printf("Ñğåäíåå àğèôìåòè÷åñêîå ââåäåííûõ ÷èñåë: %f", average);
+    //*/
 
     return 0;
 }
