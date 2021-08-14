@@ -34,6 +34,7 @@ int main(int argc, const char** argv)
     c = (a > b) ? b : a;
     
     printf("c = %d\n", c);
+    printf("%s\n", (a > b) ? "true" : "false");
 
     return 0;
 }
