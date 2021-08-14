@@ -2,21 +2,36 @@
 
 int main(int argc, const char** argv)
 {
-    char answer;
-    printf("Do you want me to salute you (y/n)? ");
-    scanf("%s", &answer);
-    if (answer == 'y')
+    // char answer;
+    // printf("Do you want me to salute you (y/n)? ");
+    // scanf("%s", &answer);
+    // if (answer == 'y')
+    // {
+    //     printf("Hello, user!\n");
+    // }
+    // else if (answer == 'n')
+    // {
+    //     printf("I never wanted to salute you!\n");
+    // }
+    // else
+    // {
+    //     printf("I can not understand your input\n");
+    // }
+
+    int a = 10;
+    int b = 15;
+    int c;
+
+    if (a > b)
     {
-        printf("Hello, user!\n");
-    }
-    else if (answer == 'n')
-    {
-        printf("I never wanted to salute you!\n");
+        c = b;
     }
     else
     {
-        printf("I can not understand your input\n");
+        c = a;
     }
+    
+    printf("c = %d\n", c);
 
     return 0;
 }
